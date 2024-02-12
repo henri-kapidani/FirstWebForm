@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Template.master.cs" Inherits="FirstWebForm.Template" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <asp:ContentPlaceHolder ID="Title" runat="server">
+</asp:ContentPlaceHolder>
+    </title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <h1>Il sito di prova Web Forms</h1>
+            <nav>
+                <a href="Home.aspx">Home.aspx</a>
+                <a href="About.aspx">About.aspx</a>
+                <a href="Contacts.aspx">Contacts.aspx</a>
+            </nav>
+        </header>
+        <main>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </main>
+        <footer>
+            Ciao, fine della pagina
+        </footer>
+    </form>
+</body>
+</html>
